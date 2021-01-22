@@ -1,0 +1,16 @@
+.home-wrap {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-main {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.main-wrap {
+    padding: 30px;
+}

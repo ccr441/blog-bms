@@ -1,0 +1,44 @@
+.ql-snow .ql-picker.ql-size {
+  $i: 20;
+  @while $i > 8 {
+    .ql-picker {
+      &-label[data-value="#{$i}px"]::before,
+      &-item[data-value="#{$i}px"]::before {
+        content: '#{$i}px';
+        font-size: #{$i}px;
+      } }
+    $i: $i - 2;
+  }
+}
+.ql-picker.ql-lineHeight {
+  $i: 3;
+  @while $i > 0.9 {
+    .ql-picker {
+      &-label[data-value="#{$i}"]::before,
+      &-item[data-value="#{$i}"]::before {
+        content: '#{$i}';
+      }
+    $i: $i - 0.5;
+    }
+  }
+}
+
+
+.ql-lineHeight {
+  margin-right: 40px;
+  &::before {
+    content: "行内: ";
+    position: relative;
+    top: 2px;
+    left: 8px;
+  }
+
+  .ql-picker-label {
+    left: 50px;
+    top: -22px;
+  }
+
+  .ql-picker-options {
+    left: 50px;
+  }
+}

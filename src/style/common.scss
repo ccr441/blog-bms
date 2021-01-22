@@ -1,0 +1,212 @@
+$font-size-max: 28 !default;
+$font-size-min: 10 !default;
+$layout-number:          5 !default;
+$box-increase-gradient: 10 !default;
+// 字体大小 font-size
+@for $i from $font-size-min through $font-size-max {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+/**
+  外边距、内边距
+ */
+ @for $i from 0 through $layout-number{
+  .margin#{$i * $box-increase-gradient}{ margin: #{$i * $box-increase-gradient}px; }
+  .margint#{$i * $box-increase-gradient}{ margin-top: #{$i * $box-increase-gradient}px; }
+  .marginb#{$i * $box-increase-gradient}{ margin-bottom: #{$i * $box-increase-gradient}px; }
+  .marginl#{$i * $box-increase-gradient}{ margin-left: #{$i * $box-increase-gradient}px; }
+  .marginr#{$i * $box-increase-gradient}{ margin-right: #{$i * $box-increase-gradient}px; }
+  .margint-n#{$i * $box-increase-gradient}{ margin-top: #{$i * $box-increase-gradient}px; }
+  .marginb-n#{$i * $box-increase-gradient}{ margin-bottom: #{$i * $box-increase-gradient}px; }
+  .marginl-n#{$i * $box-increase-gradient}{ margin-left: #{$i * $box-increase-gradient}px; }
+  .marginr-n#{$i * $box-increase-gradient}{ margin-right: #{$i * $box-increase-gradient}px; }
+
+  .marginh#{$i * $box-increase-gradient}{
+    @extend .marginl#{$i * $box-increase-gradient};
+    @extend .marginr#{$i * $box-increase-gradient};
+  }
+
+  .marginv#{$i * $box-increase-gradient}{
+    @extend .margint#{$i * $box-increase-gradient};
+    @extend .marginb#{$i * $box-increase-gradient};
+  }
+
+  .padding#{$i * $box-increase-gradient}{ padding: #{$i * $box-increase-gradient}px; }
+  .paddingt#{$i * $box-increase-gradient}{ padding-top: #{$i * $box-increase-gradient}px; }
+  .paddingb#{$i * $box-increase-gradient}{ padding-bottom: #{$i * $box-increase-gradient}px; }
+  .paddingl#{$i * $box-increase-gradient}{ padding-left: #{$i * $box-increase-gradient}px; }
+  .paddingr#{$i * $box-increase-gradient}{ padding-right: #{$i * $box-increase-gradient}px; }
+
+  .paddingh#{$i * $box-increase-gradient}{
+    @extend .paddingl#{$i * $box-increase-gradient};
+    @extend .paddingr#{$i * $box-increase-gradient};
+  }
+
+  .paddingv#{$i * $box-increase-gradient}{
+    @extend .paddingt#{$i * $box-increase-gradient};
+    @extend .paddingb#{$i * $box-increase-gradient};
+  }
+}
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.dis-b { display: block; }
+.dis-i { display: inline-block; }
+.dis-n { display: none; }
+// text weight
+.fw-light {
+  font-weight: 300;
+}
+.fw-lighter {
+  font-weight: lighter;
+}
+.fw-normal {
+  font-weight: 400;
+}
+.fw-bold {
+  font-weight: 600;
+}
+.fw-bolder {
+  font-weight: bolder;
+}
+.float-r {
+  float: right;
+}
+.float-l {
+  float: left;
+}
+.clearfix:after {
+  display: block;
+  height: 0px;
+  visibility: hidden;
+  content: "";
+  clear: both;
+}
+.pos-r {
+  position: relative;
+}
+.pos-a {
+  position: absolute;
+}
+.pos-f {
+  position: fixed;
+}
+.overflow-h {
+  overflow: hidden;
+}
+.overflow-y {
+  overflow-y: scroll;
+}
+.dis-b {
+  display: block;
+}
+.dis-i {
+  display: inline-block;
+}
+.dis-n {
+  display: none;
+}
+.dis-f {
+  display: flex;
+}
+.flex1 {
+  flex: 1;
+}
+.flex1-5 {
+  flex: 1.5;
+}
+.flex2 {
+  flex: 2;
+}
+.flex3 {
+  flex: 3;
+}
+.flex5 {
+  flex: 5;
+}
+// text weight
+.fw-light {
+  font-weight: 300;
+}
+.fw-lighter {
+  font-weight: lighter;
+}
+.fw-normal {
+  font-weight: 400;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.fw-bolder {
+  font-weight: bolder;
+}
+.bg-white {
+  background-color: #fff;
+}
+.c-white {
+  color: #fff;
+}
+.bg-primary {
+  background-color: #02B5AC;
+}
+.c-primary {
+  color: #02B5AC;
+}
+.c-primaryer {
+  color: #1abbb3;
+}
+.bg-gray {
+  background-color: #999;
+}
+.bg-grayer {
+  background-color: #fbf9f9;
+}
+.c-gray {
+  color: #999;
+}
+.c-dark {
+  color: #666;
+}
+.c-darker {
+  color: #333;
+}
+.c-darkened {
+  color: #323C47;
+}
+.c-black {
+  color: #000;
+}
+.align-center {
+  align-items: center;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.round {
+  border-radius: 50%;
+}
+.min-round {
+  border-radius: 6px;
+}

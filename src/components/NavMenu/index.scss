@@ -1,0 +1,33 @@
+.nav-wrap {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  flex: 0 0 240px;
+  background: #304156;
+  color: #fff;
+  border-right: solid 1px #e6e6e6;
+  box-shadow: 0 12px 18px 0 rgba(239, 239, 239, 0.5);
+  .el-menu {
+    border: none;
+  }
+}
+.nav-wrap::-webkit-scrollbar {
+  width: 0;
+}
+.nav-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 10px 0;
+  .title-logo {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .nav-wrap {
+    flex: 0 0 200px;
+  }
+}
