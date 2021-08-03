@@ -57,7 +57,8 @@
       "@typescript-eslint/no-explicit-any": [
         "off"
       ],
-      "camelcase": [0, { "properties": "never" }]
+      "camelcase": "off",
+      "@typescript-eslint/camelcase": "off"
     }
   },
   "browserslist": [

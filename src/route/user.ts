@@ -1,6 +1,6 @@
 export const userMenu = [
   {
-    path: "/user",
+    path: "/home/users",
     component: () => import("@/views/User/user.vue"),
     name: "user",
     meta: {
@@ -11,13 +11,13 @@ export const userMenu = [
   }
 ];
 
-export const userRoute = [
-  {
-    path: "/user-detail",
-    component: () => import("@/views/User/detail.vue"),
-    name: "user-detail",
-    meta: {
-      title: "用户详情"
-    }
-  }
-];
+// export const userRoute = [
+//   {
+//     path: "/user-detail",
+//     component: () => import("@/views/User/detail.vue"),
+//     name: "user-detail",
+//     meta: {
+//       title: "用户详情"
+//     }
+//   }
+// ];

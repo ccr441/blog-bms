@@ -247,7 +247,7 @@ export default class User extends Vue {
   }
 
   deleteUser(row: any) {
-    this.$confirm("确定要删除次用户吗?", "提示", {
+    this.$confirm("确定要删除此用户吗?", "提示", {
       confirmButtonText: "确定",
       cancelButtonText: "取消",
       type: "warning"
